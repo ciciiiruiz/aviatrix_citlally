@@ -21,7 +21,8 @@ class Aviatrix {
     var price = 0.0
     var fuelCost = 0.0
     var difference = 0.0
-   
+//    var approximatedMpg : Int
+//    var numberOfGallons : Int
     
     init (authorName : String, current : String) {
         author = authorName
@@ -32,6 +33,12 @@ class Aviatrix {
         running = true
         return running
     }
+    
+//    func mpg() -> Double {
+//        milesPerGallon = 0.55 - (numberOfGallons)*(0.00005)
+//        Double(milesPerGallon = approximatedMpg)
+//        return approximatedMpg
+//    }
     
     func refuel() -> Double {
         difference = maxFuel - fuelLevel
